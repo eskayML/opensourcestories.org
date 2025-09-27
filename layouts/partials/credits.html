@@ -15,10 +15,4 @@
       href="/coordinators/{{ $name | urlize | lower }}/" class="link blue hover-black">{{ $name }}</a>{{ end }}.
   </span>
   {{ end }}
-
-  {{ with .Params.coordinators }}
-    <span>
-      and coordinated by {{ $coords := . }}{{ range $i, $name := $coords }}{{ if $i }}, {{ end }}<a href="/coordinators/{{ $name | urlize | lower }}/" class="link blue hover-black">{{ $name }}</a>{{ end }}.
-    </span>
-  {{ end }}
 </p>
